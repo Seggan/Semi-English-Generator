@@ -35,7 +35,7 @@ english_dict = {
     27: "p",
     28: "q",
     29: "qu",
-    30: "qu",
+    30: "un",
     31: "r",
     32: "re",
     33: "ri",
@@ -70,5 +70,5 @@ english_dict = {
 # this function grabs syllables from the dictionary and strings them together.
 words = [''.join([random.choice(english_dict) for _ in range(random.randint(2,8))]) for _ in range(1000)]
 # this part creates an output
-with open("TrillionNames" + str(RAND) + ".txt", "w") as text_file:
-    text_file.write(str(words))
+for n in words:
+    print(n)
